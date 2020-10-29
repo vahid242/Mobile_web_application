@@ -1,0 +1,57 @@
+body{
+	background-color: #41d6c3;
+}
+
+.exGrid {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"exHead exHead"
+		"exList exButton"
+		"exFoot exFoot"
+	;
+	gap: 2px;
+	place-items: center; 
+}
+
+.exHead { 
+	text-transform: uppercase; 
+	color: navy; 
+	text-align: center; 
+	grid-area: exHead;
+}
+
+.exList{
+	grid-area: exList;
+}
+
+.exButton{
+	grid-area: exButton;
+}
+
+
+.exFoot {
+	color: navy; 
+	grid-area: exFoot;
+}
+
+.newFormat{
+	background-color: red;
+	font-style: italic; 
+}
+
+.exButton button{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.anchorCSS { 
+	border: 1px black solid;
+	background-color: #e7e7e7; 
+	color: black;
+    text-decoration: none;
+    padding: 2px;
+    text-align: center;
+    font-size: 1.2em; 
+}

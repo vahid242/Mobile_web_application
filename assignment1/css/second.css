@@ -1,0 +1,20 @@
+body{
+	background-color: #5596e6;
+}
+.exHead { 
+	font-size: 1.2em;
+	text-align: center; 
+}
+
+img{
+	display: block;
+	width: 150px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.anchorCSS { border-radius: 50px; background-color: navy; 
+  font-size: 1em; text-decoration: none; color: white; padding: 5px;
+  text-align: center;}
+
+  #nextButton {position: fixed; bottom: 50px; right: 100px;}
