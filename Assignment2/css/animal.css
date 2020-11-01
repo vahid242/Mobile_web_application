@@ -1,0 +1,54 @@
+body{
+	background-color: burlywood;
+}
+.exGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"exHead"
+		"exPic"
+		"exFoot"
+	;
+	place-items: center; 
+	/* gap: 5px; */
+}
+
+.exHead { 
+	text-align: center; 
+	grid-area: exHead;
+	font-size: 1.5em;
+}
+
+
+.exPic{
+	grid-area: exPic;
+	text-align: center;
+}
+
+.exFoot {
+	text-align: center; 
+	grid-area: exFoot;
+	font-size: 1.2em;
+	margin-top: 15px;
+}
+img{
+	width: 200px;
+	height: 200px;
+}
+#animalType{
+	text-transform: uppercase;
+	color: navy;
+	font-weight: bold;
+}
+
+.name{
+
+	font-weight: bold;
+}
+
+#nextButton {
+	position: absolute; 
+	top: 20px; 
+	left: 30px;
+}
