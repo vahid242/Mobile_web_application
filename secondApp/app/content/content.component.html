@@ -1,0 +1,34 @@
+<section class="gridArea">
+    <div class="imgArea common">
+      <img src="assets/images/bear.jpg" width="150px">
+    </div>
+    <div class="listArea common">
+      <h3>My Student Info:</h3>
+      <ul>
+        <li>Name: {{contentinfo.sname}} </li>
+        <li>Campus: {{contentinfo.scampus}} </li>
+        <li>Number: {{contentinfo.sid}} </li>
+        <li>Username: {{contentinfo.slogin}} </li>
+      </ul>
+    </div>
+    <div class="inputArea common">
+      <h3>2-way Binding</h3>
+      <p>City: {{ city}}</p>
+      <label>
+        <input [(ngModel)] = "city" autofocus>
+      </label>
+      <hr>
+      <button [disabled] = "city ===  ''" (click)="clearCity()"> Reset City </button>
+      <hr>
+      <p *ngIf = "(city | uppercase) === 'BRAMPTON' || (city| uppercase) === 'OAKVILLE'; else noCampus"
+      [ngStyle]="{ backgroundColor: backCampus()}"
+      [ngClass]="{oak: (city | uppercase) === 'OAKVILLE',
+      davis: (city | uppercase) === 'BRAMPTON'}">
+        This city has a Sheridan campus
+      </p>
+
+      <ng-template #noCampus>
+        <p [ngStyle]="{ backgroundColor: backCampus()}">No Campus</p>
+      </ng-template>
+    </div>
+  </section>
