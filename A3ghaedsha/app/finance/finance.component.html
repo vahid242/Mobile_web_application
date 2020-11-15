@@ -1,0 +1,19 @@
+<p>finance</p>
+<p>Loan: {{ loan | currency}}</p>
+<label>
+    <input [(ngModel)] = "loan" autofocus>
+</label>
+<p *ngIf = "(loan) < 50000 || (loan) ==
+50000; else greater">
+Based on your requested loan amount of {{loan | currency}}, 
+your fee will be {{less | currency}}
+</p>
+
+<ng-template #greater>
+    <p>
+        Based on your requested loan amount of {{loan | currency}}, 
+        your fee will be {{great | currency}}
+    </p>
+</ng-template>
+<p> <b>signature line:</b> Loan Officer: {{financeinfo.firstName}} {{financeinfo.lastName}}</p>
+<img src="assets/images/img506.jpg" width="100px" height="100px" >

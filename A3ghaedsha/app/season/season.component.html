@@ -1,0 +1,20 @@
+<p>Click an image to change formatting:</p>
+
+<table>
+    <tr>
+        <td><img src="assets/images/spring.jpg" width="100px" height="100px" (click)="changeView()"></td>
+        <td><div id="square1" [ngStyle]="{backgroundColor: changeView()}"></div></td>
+    </tr>
+    <tr>
+        <td><img src="assets/images/summer.jpeg" width="100px" height="100px" (click)="changeView()"></td>
+        <td><div id="square2"></div></td>
+    </tr>
+    <tr>
+        <td><img src="assets/images/fall.png" width="100px" height="100px" (click)="changeView()"></td>
+        <td><div id="square3"></div></td>
+    </tr>
+    <tr>
+        <td><img src="assets/images/winter.jpeg" width="100px" height="100px" (click)="changeView()"></td>
+        <td><div id="square4"></div></td>
+    </tr>
+</table>
