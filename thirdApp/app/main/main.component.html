@@ -1,0 +1,68 @@
+<!-- main.component.html -->
+<mat-tab-group mat-stretch-tabs  
+               class="example-stretched-tabs mat-elevation-z4"
+            [ngStyle]="{textAlign:'center'}">
+    <!-- Simple text label -->
+  <mat-tab label="Buttons and Icons">
+    <button mat-button>Normal</button>&nbsp;&nbsp;
+    <button mat-fab>Circle</button>&nbsp;&nbsp;
+    <button mat-stroked-button>Stroked</button>&nbsp;&nbsp;
+    <button mat-raised-button>Raised</button>
+    <hr>
+    <!-- Icon only / Primary Colour -->
+    <button mat-icon-button>
+        <mat-icon color="primary">favorite</mat-icon>
+    </button>&nbsp;&nbsp;
+
+    <!-- Icon on Right / Accent Colour -->
+    <button mat-stroked-button>Stroked with ICON on right
+        <mat-icon color="accent">shopping_cart</mat-icon>
+    </button>&nbsp;&nbsp;
+
+    <!-- Icon Underneath / Warn Colour -->
+    <button mat-stroked-button (click)="alertMe()"> Stroked with ICON underneath
+        <mat-icon color="warn">android</mat-icon>
+    </button>&nbsp;&nbsp;    
+    <hr>
+  </mat-tab>
+
+  <!-- Label with Icon for Personal Data-->
+  <mat-tab>
+    <ng-template mat-tab-label>
+        Bio &nbsp;&nbsp;<mat-icon>android</mat-icon>
+    </ng-template>
+    <section>
+        <h3>
+            My name is {{maininfo.sname}}
+        </h3>
+        <h3>
+            My ID is {{maininfo.sid}}
+        </h3>
+    </section>
+
+  </mat-tab>  
+
+  <!-- Label with Icon for External Data View -->
+  <mat-tab>
+    <ng-template mat-tab-label>
+        My Classes &nbsp;&nbsp;
+        <mat-icon>meeting_room</mat-icon>
+    </ng-template>
+
+    <ul id="myList" [ngStyle]="{textAlign: 'left', fontSize:'1.5em'}">
+      <li *ngFor="let cls of myclasses;  let i=index" id="s{{i}}"
+        (click)="onClickMe(i)">
+        {{cls.cname}}
+
+        <div id='d{{i}}' style="display: none;">
+          <strong>Class Name: </strong>{{cls.cname}} <br>
+          <strong>Room: </strong> {{cls.room}}<br>
+          <strong>Day of Week: </strong> {{cls.dow}}<br>
+        </div>
+      </li>
+    </ul>
+  </mat-tab>
+</mat-tab-group>
+
+
+
