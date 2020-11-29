@@ -1,0 +1,15 @@
+<button mat-raised-button [ngClass]="{buttonCSS:'true'}"
+        (click)="displayJSON(1)">
+    CP Term 01 / Click to see classes
+    <mat-icon color="primary">filter_1</mat-icon>
+</button>
+<hr>
+<button mat-raised-button class="buttonCSS"
+        (click)="displayJSON(2)">
+    CP Term 02 / Click to see classes
+    <mat-icon color="primary">filter_2</mat-icon>
+</button>
+<hr>
+<div>
+    <p [innerHTML]="outArea"></p>
+</div>

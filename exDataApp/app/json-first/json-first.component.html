@@ -1,0 +1,13 @@
+<h3>{{cpHead.program}} is a {{cpHead.credential}} <br>
+    {{cpHead.schedule}}
+</h3>
+<table>
+    <tr>
+        <th>Class</th> <th>Credits</th> <th>Descriptions</th>
+    </tr>
+    <tr *ngFor="let cls of cpProg01">
+        <td>{{cls.class}}</td>
+        <td>{{cls.credit}}</td>
+        <td>{{cls.description}}</td>
+    </tr>
+</table>

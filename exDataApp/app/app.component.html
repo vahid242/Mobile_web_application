@@ -1,0 +1,32 @@
+<app-header [headinfo]= 'bio'></app-header>
+<mat-tab-group mat-stretch-tabs  
+               class="example-stretched-tabs mat-elevation-z4"
+        [ngStyle]="{textAlign: 'center'}">
+        
+    <mat-tab label="CSV">
+        <app-csv></app-csv>
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <span class="tab-text">JSON</span>
+            <span class="tab-text">Term1</span>
+        </ng-template>
+
+        <app-json-first [cpProg01]='t01' [cpProg02]='t02' [cpHead]='cpHead'></app-json-first>
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <span class="tab-text">
+                <mat-icon color="accent">school</mat-icon>&nbsp;
+            JSON&nbsp;
+                <mat-icon color="primary">school</mat-icon>&nbsp;
+            </span>
+            <span class="tab-text">Buttons</span>
+        </ng-template>
+
+        <app-json-buttons [cpProg01]='t01' [cpProg02]='t02'></app-json-buttons>
+    </mat-tab>
+</mat-tab-group>
+<app-footer></app-footer>

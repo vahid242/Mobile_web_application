@@ -1,0 +1,24 @@
+<h3>Sales Data</h3>
+<table>
+    <!-- display header line with special css -->
+    <tr *ngFor="let rec of csvHeader; let first=first"
+    [ngClass]="{'title': first}">
+        <td>{{rec.sdate}}</td>
+        <td>{{rec.region}}</td>
+        <td>{{rec.rep}}</td>
+        <td>{{rec.item}}</td>
+        <td>{{rec.units}}</td>
+        <td>{{rec.cost}}</td>
+        <td>{{rec.total}}</td>
+    </tr>
+
+    <tr *ngFor="let rec of csvData">
+        <td>{{rec.sdate}}</td>
+        <td>{{rec.region}}</td>
+        <td>{{rec.rep}}</td>
+        <td>{{rec.item}}</td>
+        <td [ngStyle]="{textAlign:'right'}">{{rec.units}}</td>
+        <td [ngStyle]="{textAlign:'right'}">{{rec.cost | currency}}</td>
+        <td [ngStyle]="{textAlign:'right'}">{{rec.total | currency}}</td>
+    </tr>
+</table>
