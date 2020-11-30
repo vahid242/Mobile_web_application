@@ -1,0 +1,30 @@
+{
+	"holiday": 
+		{
+			"season" : "Winter 2020 Holiday Season",
+			"pic" : "startup.jpg",
+			"signature" : "From, Vahid",
+			"myemail" : "vahid.ghaed@sheridancollege.ca"
+		},
+	"greeting" : [
+			{ "txt" : "Merry Christmas!", "pic" : "mc.jpg" },
+			{ "txt" : "Happy Holidays!", "pic" : "hhol.jpg"  },
+			{ "txt" : "Season's Greetings!", "pic" : "sg.jpg"  },
+			{ "txt" : "Happy Hanukkah!", "pic" : "hhan.jpg"  },
+			{ "txt" : "Happy Kwanzaa!", "pic" : "hk.jpg"  },			
+			{ "txt" : "Happy Winter Solstice!", "pic" : "ws.jpg"  },			
+			{ "txt" : "Happy Festivus!", "pic" : "hf.jpg"  }		
+		],
+	"borderColour" : [
+		{ "colour" : "blue"},
+		{ "colour" : "red"},
+		{ "colour" : "green"},
+		{ "colour" : "black"},
+		{ "colour" : "yellow"},
+		{ "colour" : "brown"}		
+	],
+	"borderEdge" : [
+		{ "edge" : "square"},
+		{ "edge" : "round"}		
+	]
+}

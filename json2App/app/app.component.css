@@ -1,0 +1,26 @@
+#card {
+    background-image: url('../assets/images/winterBack.png');
+    text-align: center;
+  }
+  
+  #flex {display: flex;}
+  .flex1, .flex2, .flex3 {flex: 1; margin: 3px;}
+
+  h4{
+    color: red;
+  }
+
+  .output{
+    background-color: aquamarine;
+    padding: 5px;
+    font-weight: bold;
+  }
+  #outid{
+    margin-left: 15%;
+    margin-right: 15%;
+    border-style: solid;
+    border-width: thick;
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'freestyle script';
+  }
